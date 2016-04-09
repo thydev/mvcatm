@@ -92,9 +92,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AutomaticTellerMachine\AutomaticTellerMachine.csproj">
+    <ProjectReference Include="..\AutomaticTellerMachine\AutomatedTellerMachine.csproj">
       <Project>{A33FEBAC-5C82-4D43-8036-8F8B3D410748}</Project>
-      <Name>AutomaticTellerMachine</Name>
+      <Name>AutomatedTellerMachine</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
