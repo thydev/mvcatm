@@ -13,11 +13,11 @@ namespace AutomaticTellerMachine
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            //routes.MapRoute(
-            //    name: "Serial",
-            //    url: "{controller}/{action}/{id}",
-            //    defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
-            //);
+            routes.MapRoute(
+                name: "Serial number",
+                url: "serial/{letterCase}",
+                defaults: new { controller = "Home", action = "Serial", letterCase="upper" }
+            );
 
             routes.MapRoute(
                 name: "Default",

@@ -40,5 +40,18 @@ namespace AutomaticTellerMachine.Controllers
             ViewBag.Message = "Your ...";
             return View("About");
         }
+
+        public ActionResult Serial(string letterCase)
+        {
+            var serial = "ASPNETMVC5ATM1";
+            if (letterCase == "lower")
+            {
+                return Content(serial.ToLower());
+            }
+            //return Content(serial);
+            //return new HttpStatusCodeResult(403);
+            //return Json(new { name = "serial", value = serial }, JsonRequestBehavior.AllowGet);
+            return RedirectToAction("Index");
+        }
     }
 }

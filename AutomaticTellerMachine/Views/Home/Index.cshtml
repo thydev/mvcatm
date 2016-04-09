@@ -15,26 +15,27 @@
         <p>
             Open an account with us
         </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Register</a></p>
+        <p>@Html.ActionLink("Register", "Register", "Account", null, new { @class = "btn btn-default" })</p>
     </div>
     <div class="col-md-4">
         <h2>Log in</h2>
         <p>Access your existing account</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Log in</a></p>
+        <p>@Html.ActionLink("Log in", "Login", "Account", null, new { @class = "btn btn-default" })</p>
     </div>
     
 </div>
+@*
 
 @section scripts {
     <script> var testing = true; </script>
     }
 
-You are using @Request.Browser.Browser, and that's OK! Email us at support@support.com if you have any problem or send us a tweet @@mvcatm.
+                You are using @Request.Browser.Browser, and that's OK! Email us at support@support.com if you have any problem or send us a tweet @@mvcatm.
 @{ var amounts = new List<Decimal> { 100, 25.50m, -50, 232.32m }; }
 
 <ul>
     @foreach(decimal amount in amounts)
-    {
+        {
         <li>@formatAmount(amount)</li>
         <text>Plain text1</text>
         @:Plain text2
@@ -50,4 +51,5 @@ if (amount < 0) { color = "red"; }
 
 @* 
     Comment anything    
+
 *@
